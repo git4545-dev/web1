@@ -15,22 +15,15 @@
           <release>16</release>
         </configuration>
       </plugin>
-      <plugin>
-        <artifactId>maven-war-plugin</artifactId>
-        <version>3.2.3</version>
-        <configuration>
-          <warSourceDirectory>WebContent</warSourceDirectory>
-        </configuration>
-      </plugin>
-      
-      <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-war-plugin</artifactId>
-            <version>3.2.3</version>
+      <plugins>
+    <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-war-plugin</artifactId>
             <configuration>
-                <failOnMissingWebXml>false</failOnMissingWebXml>
+               <failOnMissingWebXml>false</failOnMissingWebXml>
             </configuration>
-        </plugin>
+    </plugin>
+  </plugins>
     </plugins>
   </build>
 </project>
